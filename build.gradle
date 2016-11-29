@@ -54,6 +54,10 @@ dependencies {
     testCompile "org.grails.plugins:geb"
     testRuntime "org.seleniumhq.selenium:selenium-htmlunit-driver:2.47.1"
     testRuntime "net.sourceforge.htmlunit:htmlunit:2.18"
+
+    runtime ':facebook-sdk:2.7.0'
+    compile 'org.grails:grails-datastore-rest-client'
+
 }
 
 
@@ -61,3 +65,7 @@ assets {
     minifyJs = true
     minifyCss = true
 }
+
+grails.plugin.facebooksdk.app.id = {APP_ID}
+grails.plugin.facebooksdk.app.permissions = {APP_PERMISSIONS} // Ex. ['email','user_photos']
+grails.plugin.facebooksdk.app.secret = {APP_SECRET}

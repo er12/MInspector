@@ -6,8 +6,8 @@ import spock.lang.Specification
 /**
  * See the API for {@link grails.test.mixin.services.ServiceUnitTestMixin} for usage instructions
  */
-@TestFor(DBManagerService)
-class DBManagerServiceSpec extends Specification {
+@TestFor(DatabaseService)
+class DatabaseServiceSpec extends Specification {
 
     def setup() {
     }
@@ -15,8 +15,11 @@ class DBManagerServiceSpec extends Specification {
     def cleanup() {
     }
 
-    void "test something"() {
-        expect:"fix me"
-            true == false
+    void "Database connection should be successful"() {
+        //when:
+        //DatabaseService.testConnection()
+        //then:
+
+
     }
 }
