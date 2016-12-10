@@ -20,6 +20,15 @@
 
     </g:each>
 </ul>
+<br/>
+<ul>
+    <g:each var="header" in="${res2}">
+        <li>
+            ${header}
+        </li>
+
+    </g:each>
+</ul>
 
 </body>
 </html>
