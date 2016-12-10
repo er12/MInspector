@@ -149,10 +149,10 @@
                             <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Reportes<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="flot.html">Seguidores</a>
+                                    <a href="flot.html"><i class="fa fa-user-circle-o"></i> P&uacute;blico objetivo</a>
                                 </li>
                                 <li>
-                                    <a href="morris.html">Impacto</a>
+                                    <a href="morris.html"><i class="fa fa-exclamation"></i> Impacto</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->

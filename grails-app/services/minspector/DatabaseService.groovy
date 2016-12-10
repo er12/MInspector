@@ -12,8 +12,6 @@ import java.sql.Statement
 class DatabaseService {
 
     def testConnection() {
-
-
         try {
             Class.forName("org.postgresql.Driver");
         } catch (ClassNotFoundException e) {
@@ -60,7 +58,7 @@ class DatabaseService {
 
     public boolean insertFact()
     {
-        
+
         return true;
     }
 
@@ -69,18 +67,11 @@ class DatabaseService {
         String token = "";
         Connection conn = null;
         try {
-            String sql = "SELECT * FROM tokens where social_network like \'" + socialNetwork + "\'" ;
+            String sql = "CREATE TABLE" ;
 
             conn = DriverManager.getConnection("jdbc:postgresql://localhost:5432/minspector","postgres","postgres");
+            conn.createStatement().executeQuery(sql);
 
-            Statement stmt = conn.createStatement();
-
-            ResultSet result = stmt.executeQuery(sql);
-
-            while(result.next()) {
-
-                token = result.getString("token");
-            }
 
             conn.close();
         } catch (SQLException e) {
@@ -89,6 +80,24 @@ class DatabaseService {
 
 
         return token;
+
+    }
+
+    def init() {
+
+        Connection conn = null;
+        try {
+            conn = DriverManager.getConnection("jdbc:postgresql://localhost:5432/minspector", "postgres", "postgres");
+            conn.close();
+            println "success-------------------------------------------------------"
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+
+    }
+    def pollute()
+    {
 
     }
 

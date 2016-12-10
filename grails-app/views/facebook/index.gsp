@@ -48,17 +48,7 @@
             xfbml      : true,  // parse social plugins on this page
             version    : 'v2.8' // use graph api version 2.8
         });
-/*
-* <div id="fb-root"></div>
- <script>(function(d, s, id) {
- var js, fjs = d.getElementsByTagName(s)[0];
- if (d.getElementById(id)) return;
- js = d.createElement(s); js.id = id;
- js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.8&appId=1789463211309160";
- fjs.parentNode.insertBefore(js, fjs);
- }(document, 'script', 'facebook-jssdk'));
-*
-* */
+
         // Now that we've initialized the JavaScript SDK, we call
         // FB.getLoginStatus().  This function gets the state of the
         // person visiting this page and can return one of three states to
@@ -92,8 +82,11 @@
         console.log('Welcome!  Fetching your information.... ');
         FB.api('/me', function(response) {
             console.log('Successful login for: ' + response.name);
-            document.getElementById('status').innerHTML =
-                    'Thanks for logging in, ' + response.name + '!';
+
+            ${}
+
+
+            console.log(response);
         });
     }
 </script>
@@ -108,7 +101,7 @@
                 <!-- /.col-lg-12 -->
             </div>
             <!-- /.row -->
-            <g:if test="${currentSesion}">
+            <g:if test="${!currentSesion}">
                 <div class="row">
                     <div class="col-lg-3 col-md-6">
                         <div class="panel panel-primary">
@@ -126,7 +119,7 @@
                             <a href="#">
                                 <div class="panel-footer">
                                     <span class="pull-left">Registrar</span>
-                                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                    <span class="pull-right"><div class="fb-login-button" data-max-rows="1" data-size="medium" data-show-faces="false" data-auto-logout-link="false"></div></span>
                                     <div class="clearfix"></div>
                                 </div>
                             </a>
@@ -135,6 +128,9 @@
                 </div>
 
             </g:if>
+            <g:else>
+
+            </g:else>
 
 
 
@@ -142,10 +138,7 @@
         <!-- /.container-fluid -->
     </div>
 <!-- /#page-wrapper -->
-<div class="fb-login-button" data-max-rows="1" data-size="medium" data-show-faces="false" data-auto-logout-link="false"></div>
 
-<div id="status">
-</div>
 
 
 </body>

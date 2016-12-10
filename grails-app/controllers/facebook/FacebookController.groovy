@@ -9,10 +9,8 @@ class FacebookController {
     def index() {
         def currentSesion = session["currentSesion"];
 
-        [currentSesion: "false"]
-
-
-
+        //me?fields=id,name,likes{id,name,category_list}
+        [currentSesion: false]
 
     }
 }
