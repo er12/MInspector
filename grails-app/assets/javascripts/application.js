@@ -8,6 +8,10 @@
 //= require jquery/jquery.min.js
 //= require bootstrap/js/bootstrap.js
 //= require metisMenu/metisMenu.min.js
+//= require jquery.tagsinput.js
+//= require morris.js
+//= require morris-data.js
+//= require raphael.js
 
 
 if (typeof jQuery !== 'undefined') {
