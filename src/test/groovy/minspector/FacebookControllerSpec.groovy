@@ -1,5 +1,6 @@
 package minspector
 
+import facebook.FacebookController
 import grails.test.mixin.TestFor
 import spock.lang.Specification
 

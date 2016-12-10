@@ -11,6 +11,8 @@ class Post {
 
     Date date
 
+    SocialNetwork socialNetwork
+
 
     static constraints = {
     }

@@ -7,6 +7,8 @@ class Account {
 
     Company company
 
+    static hasMany = [posts: Post]
+
     static constraints = {
     }
 }
