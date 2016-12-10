@@ -11,4 +11,6 @@
 *= require metisMenu/metisMenu.min.css
 *= require font-awesome/css/font-awesome.min.css
 *= require mobile
+*= require morris.css
+*= require jquery.tagsinput.css
 */

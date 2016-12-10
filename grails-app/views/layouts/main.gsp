@@ -188,6 +188,7 @@
 </div>
 
     <asset:javascript src="jquery/jquery.min.js"/>
+    <asset:javascript src="jquery.tagsinput.js"/>
     <asset:javascript src="application.js"/>
     <asset:javascript src="bootstrap/js/bootstrap.min.js"/>
     <asset:javascript src="metisMenu/metisMenu.min.js"/>
