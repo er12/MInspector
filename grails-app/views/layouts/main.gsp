@@ -9,7 +9,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
     <asset:stylesheet src="application.css"/>
-    <asset:stylesheet src="jquery.tagsinput.css"/>
     <asset:stylesheet src="bootstrap/js/bootstrap.min.css"/>
     <asset:stylesheet src="metisMenu/metisMenu.min.css"/>
     <asset:stylesheet src="sb-admin-2.min.css"/>
@@ -149,10 +148,10 @@
                             <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Reportes<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="flot.html"><i class="fa fa-user-circle-o"></i> P&uacute;blico objetivo</a>
+                                    <a href="flot.html"> P&uacute;blico objetivo</a>
                                 </li>
                                 <li>
-                                    <a href="morris.html"><i class="fa fa-exclamation"></i> Impacto</a>
+                                    <a href="morris.html"> Impacto</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
