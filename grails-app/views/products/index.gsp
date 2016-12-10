@@ -44,5 +44,27 @@
         <!-- /.row -->
     </div>
 
+    <!-- jQuery Tags Input -->
+    <script>
+        function onAddTag(tag) {
+            alert("Added a tag: " + tag);
+        }
 </body>
+
+        function onRemoveTag(tag) {
+            alert("Removed a tag: " + tag);
+        }
+
+        function onChangeTag(input, tag) {
+            alert("Changed a tag: " + tag);
+        }
+
+        $(document).ready(function() {
+            $('#tags_1').tagsInput({
+                width: 'auto'
+            });
+        });
+    </script>
+    <!-- /jQuery Tags Input -->
+
 
