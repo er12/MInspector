@@ -148,10 +148,10 @@
                             <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Reportes<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="flot.html">Flot Charts</a>
+                                    <a href="flot.html">Seguidores</a>
                                 </li>
                                 <li>
-                                    <a href="morris.html">Morris.js Charts</a>
+                                    <a href="morris.html">Impacto</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
