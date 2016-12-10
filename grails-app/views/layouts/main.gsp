@@ -153,23 +153,24 @@
                             <!-- /.nav-second-level -->
                         </li>
                         <li>
-                            <a href="tables.html"><i class="fa fa-table fa-fw"></i> Tables</a>
-                        </li>
-                        <li>
                             <a href="forms.html"><i class="fa fa-edit fa-fw"></i> Productos</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-wrench fa-fw"></i> Configuraci&oacute;n<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li>
-                                    <a href="panels-wells.html">Compa&ntilde;&iacute;a</a>
-                                </li>
-                                <li>
-                                    <a href="grid.html">Grid</a>
-                                </li>
-                            </ul>
-                            <!-- /.nav-second-level -->
+                            <a href="tables.html"><i class="fa fa-table fa-fw"></i> Tables</a>
                         </li>
+                        <a href="#"><i class="fa fa-wrench fa-fw"></i> Configuraci&oacute;n<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="panels-wells.html">Compa&ntilde;&iacute;a</a>
+                            </li>
+                            <li>
+                                <a href="grid.html">Ajustes</a>
+                            </li>
+                        </ul>
+                        <!-- /.nav-second-level -->
+
+
+                        <li></li>
 
                     </ul>
                 </div>
