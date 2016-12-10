@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
     <asset:stylesheet src="application.css"/>
+    <asset:stylesheet src="jquery.tagsinput.css"/>
     <asset:stylesheet src="bootstrap/js/bootstrap.min.css"/>
     <asset:stylesheet src="metisMenu/metisMenu.min.css"/>
     <asset:stylesheet src="sb-admin-2.min.css"/>
