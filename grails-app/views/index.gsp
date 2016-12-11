@@ -5,7 +5,6 @@
     <title>MInspector</title>
     <asset:stylesheet src="application.css"/>
     <asset:stylesheet src="jquery.tagsinput.css"/>
-    <asset:stylesheet src="morris.css"/>
     <asset:stylesheet src="bootstrap/js/bootstrap.min.css"/>
     <asset:stylesheet src="metisMenu/metisMenu.min.css"/>
     <asset:stylesheet src="sb-admin-2.min.css"/>
@@ -38,7 +37,13 @@
                             </div>
                             <!-- /.panel-heading -->
                             <div class="panel-body">
-                                <div id="morris-bar-chart"></div>
+
+                            <content tag="contenido">
+                                <gvisualization:pieCoreChart elementId="piechart" title="My Daily Activities" width="${500}" height="${500}"
+                                                             columns="${myDailyActivitiesColumns}" data="${myDailyActivitiesData}" />
+                                <div id="piechart"></div>
+                            </content>
+
                             </div>
                             <!-- /.panel-body -->
                         </div>
@@ -61,8 +66,6 @@
     <asset:javascript src="bootstrap/js/bootstrap.min.js"/>
     <asset:javascript src="metisMenu/metisMenu.min.js"/>
     <asset:javascript src="jquery.tagsinput.js"/>
-    <asset:javascript src="morris.js"/>
-    <asset:javascript src="morris-data.js"/>
     <asset:javascript src="raphael.js.js"/>
     <asset:javascript src="sb-admin-2.js"/>
 
