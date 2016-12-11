@@ -68,6 +68,9 @@ dependencies {
     //Less
     compile 'com.bertramlabs.plugins:less-asset-pipeline:2.12.1'
 
+    compile 'org.grails.plugins:grails-google-visualization:2.2'
+
+
 
 
 }

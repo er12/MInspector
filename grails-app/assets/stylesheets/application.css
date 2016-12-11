@@ -8,7 +8,7 @@
 * compiled file, but it's generally better to create a new file per style scope.
 *
 *= require bootstrap/css/bootstrap.min.css
-*= require metisMenu/metisMenu.min.css
+*= require metisMenu.css
 *= require font-awesome/css/font-awesome.min.css
 *= require mobile
 *= require morris.css
