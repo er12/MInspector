@@ -62,43 +62,28 @@ class DatabaseService {
         return true;
     }
 
-    def getToken(String socialNetwork)
-    {
+    def getToken(String socialNetwork) {
         String token = "";
         Connection conn = null;
         try {
-            String sql = "CREATE TABLE" ;
+            String sql = "SELECT * FROM tokens where social_network like \'" + socialNetwork + "\'";
 
-            conn = DriverManager.getConnection("jdbc:postgresql://localhost:5432/minspector","postgres","postgres");
-            conn.createStatement().executeQuery(sql);
-
-
-            conn.close();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-
-
-        return token;
-
-    }
-
-    def init() {
-
-        Connection conn = null;
-        try {
             conn = DriverManager.getConnection("jdbc:postgresql://localhost:5432/minspector", "postgres", "postgres");
+
+            Statement stmt = conn.createStatement();
+
+            ResultSet result = stmt.executeQuery(sql);
+
+            while (result.next()) {
+
+                token = result.getString("token");
+            }
+
             conn.close();
-            println "success-------------------------------------------------------"
         } catch (SQLException e) {
             e.printStackTrace();
         }
-
-
     }
-    def pollute()
-    {
 
-    }
 
 }

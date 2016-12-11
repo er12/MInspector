@@ -4,9 +4,7 @@ class BootStrap {
 
     DatabaseService databaseService
 
-    def init = { servletContext ->
-        databaseService.init();
-        databaseService.pollute();
+    def init = { servletContext -> ;
 
     }
     def destroy = {

@@ -148,7 +148,7 @@
                             <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Reportes<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="flot.html"> P&uacute;blico objetivo</a>
+                                    <a href="reports/pubobj"> P&uacute;blico objetivo</a>
                                 </li>
                                 <li>
                                     <a href="morris.html"> Impacto</a>
