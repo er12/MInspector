@@ -23,6 +23,7 @@
             }
 </g:javascript>
     <body>
+<gvisualization:apiImport/>
     <!-- Page Content -->
     <div id="page-wrapper">
         <div class="container-fluid">
@@ -35,17 +36,13 @@
                             <div class="panel-heading">
                                 Bar Chart Example
                             </div>
-                        <g:if test="${myDailyActivitiesColumns}">
-                            Llegaron ${myDailyActivitiesColumns}
-                        </g:if>
-    <!-- /.panel-heading -->
                             <div class="panel-body">
 
-                            <content tag="contenido">
+
                                 <gvisualization:pieCoreChart elementId="piechart" title="My Daily Activities" width="${500}" height="${500}"
                                                              columns="${myDailyActivitiesColumns}" data="${myDailyActivitiesData}" />
                                 <div id="piechart"></div>
-                            </content>
+
 
                             </div>
                             <!-- /.panel-body -->
