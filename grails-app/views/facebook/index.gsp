@@ -6,9 +6,63 @@
 
 </head>
 <body>
+    <!-- Page Content -->
+    <div id="page-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Facebook</h1>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+            <div class="login">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <i class="fa fa-facebook fa-5x"></i>
+                                    </div>
+                                    <div class="col-xs-9 text-right">
+                                        <!--<div class="huge">+</div>-->
+                                        <div>No registrado</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#">
+                                <div class="panel-footer">
+                                    <span class="pull-left">Registrar</span>
+                                    <span class="pull-right"><div class="fb-login-button" data-max-rows="1" data-size="medium" data-show-faces="false" data-auto-logout-link="false"></div></span>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="pages" style="display: none;">
+                <g:form controller="facebook" action="pages" role="form">
+                    <div class="form-group">
+                        <label>P&aacute;ginas</label>
+                        <select class="form-control" id="select-pages" name="select" >
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-default">Registrar pagina</button>
+                </g:form>
+
+            </div>
+
+        </div>
+        <!-- /.container-fluid -->
+    </div>
+<div id="status" style="display: none"></div>
+    <!-- /#page-wrapper -->
+
 
     <script>
-        var pages = new Array(10);
+        var pages = [];
         // This is called with the results from from FB.getLoginStatus().
         function statusChangeCallback(response) {
             console.log('statusChangeCallback');
@@ -82,81 +136,28 @@
         function testAPI() {
             console.log('Welcome!  Fetching your information.... ');
             FB.api('/me?fields=id,name,accounts', function(response) {
-                console.log(response);
-                obj = JSON.parse(json);
-                for(var page = 0; page < response.data.length && page < 10; page++)
+
+                var data = response['accounts']['data'];
+
+                for(var page = 0; page < data.length; page++)
                 {
-                    pages.push(response.data.name);
+                    pages.push(data[page]['name']);
                 }
 
-               $(".login").fadeOut();
+                $(".login").fadeOut();
+
                 var resp = "";
                 for(var i = 0 ; i <pages.length; i++)
                 {
                     resp += "<option>" + pages[i] + "</option>";
                 }
-                document.getElementById('selectPages').innerHTML = resp;
+                document.getElementById('pages').style.display = "block"
+                console.log("resp=" + resp);
+                $("#select-pages").html(resp) ;
 
-                $(".pages").fadeIn();
-
-                console.log(response);
             });
         }
     </script>
-
-    <!-- Page Content -->
-    <div id="page-wrapper">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1 class="page-header">Facebook</h1>
-                </div>
-                <!-- /.col-lg-12 -->
-            </div>
-            <!-- /.row -->
-            <div class="login">
-                <div class="row">
-                    <div class="col-lg-3 col-md-6">
-                        <div class="panel panel-primary">
-                            <div class="panel-heading">
-                                <div class="row">
-                                    <div class="col-xs-3">
-                                        <i class="fa fa-facebook fa-5x"></i>
-                                    </div>
-                                    <div class="col-xs-9 text-right">
-                                        <!--<div class="huge">+</div>-->
-                                        <div>No registrado</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="#">
-                                <div class="panel-footer">
-                                    <span class="pull-left">Registrar</span>
-                                    <span class="pull-right"><div class="fb-login-button" data-max-rows="1" data-size="medium" data-show-faces="false" data-auto-logout-link="false"></div></span>
-                                    <div class="clearfix"></div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- /.container-fluid -->
-    </div>
-    <!-- /#page-wrapper -->
-    <div class="pages" style="display: none">
-    <form role="form">
-        <div class="form-group">
-            <label>P&aacute;ginas</label>
-            <select class="form-control" id="selectPages">
-            </select>
-        </div>
-        <button type="submit" class="btn btn-default">Submit Button</button>
-    </form>
-
-    </div>
-
-
 </body>
 
 </html>

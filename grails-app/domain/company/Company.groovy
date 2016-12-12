@@ -1,6 +1,7 @@
-package minspector
+package company
 
 class Company {
+
 
     String name
 

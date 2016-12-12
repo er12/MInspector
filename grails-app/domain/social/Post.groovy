@@ -1,4 +1,4 @@
-package minspector
+package social
 
 class Post {
 

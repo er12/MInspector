@@ -1,4 +1,6 @@
-package minspector
+package company
+
+import social.Post
 
 class Account {
 

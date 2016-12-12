@@ -5,6 +5,10 @@ class AccessController {
     def index() { }
 
     def login() {
+
+        minspector.Product.deleteAll()
+        minspector.Company.deleteAll()
+
         def valid = false
 
         if(valid)
