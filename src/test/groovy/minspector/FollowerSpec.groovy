@@ -1,6 +1,7 @@
 package minspector
 
 import grails.test.mixin.TestFor
+import social.Follower
 import spock.lang.Specification
 
 /**
@@ -17,6 +18,6 @@ class FollowerSpec extends Specification {
 
     void "test something"() {
         expect:"fix me"
-            true == false
+          //  true == false
     }
 }

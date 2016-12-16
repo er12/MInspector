@@ -1,5 +1,6 @@
 package minspector
 
+import company.Account
 import grails.test.mixin.TestFor
 import spock.lang.Specification
 

@@ -15,28 +15,25 @@
 
 </head>
 
-<g:javascript>
-        var session = "${session.selectedValue}";
-            if(session != "true"){
-            // similar behavior as an HTTP redirect
-        window.location.replace("/login");
-
-            }
-</g:javascript>
     <body>
-<gvisualization:apiImport/>
-
     <!-- Page Content -->
     <div id="page-wrapper">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">P&uacute;blico objetivo</h1>
+                    <h1 class="page-header">Actividad</h1>
 
-                    <p>${apriori}</p>
-                    <gvisualization:barCoreChart elementId="barchart" title="Por red social" width="${500}" height="${500}"
-                                                 columns="${myDailyActivitiesColumns}" data="${myDailyActivitiesData}" />
-                    <div id="barchart"></div>
+                    <div class="col-lg-6">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                Bar Chart Example
+                            </div>
+                            <!-- /.panel-heading -->
+                            <div class="panel-body">
+                                <div id="morris-bar-chart"></div>
+                            </div>
+                            <!-- /.panel-body -->
+                        </div>
                         <!-- /.panel -->
                     </div>
 

@@ -13,4 +13,6 @@
 *= require mobile
 *= require morris.css
 *= require jquery.tagsinput.css
+*= require dataTables.bootstrap.css
+*= require dataTables.responsive.css
 */

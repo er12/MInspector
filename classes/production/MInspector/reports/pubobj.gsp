@@ -24,8 +24,6 @@
             }
 </g:javascript>
     <body>
-<gvisualization:apiImport/>
-
     <!-- Page Content -->
     <div id="page-wrapper">
         <div class="container-fluid">
@@ -34,9 +32,6 @@
                     <h1 class="page-header">P&uacute;blico objetivo</h1>
 
                     <p>${apriori}</p>
-                    <gvisualization:barCoreChart elementId="barchart" title="Por red social" width="${500}" height="${500}"
-                                                 columns="${myDailyActivitiesColumns}" data="${myDailyActivitiesData}" />
-                    <div id="barchart"></div>
                         <!-- /.panel -->
                     </div>
 

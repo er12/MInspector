@@ -12,7 +12,9 @@
 //= require morris.js
 //= require morris-data.js
 //= require raphael.js
-//= requi
+//= require dataTables.bootstrap.js
+//= require dataTables.responsive.js
+//= require jquery.dataTables.js
 
 
 if (typeof jQuery !== 'undefined') {

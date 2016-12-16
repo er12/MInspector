@@ -1,6 +1,7 @@
 package minspector
 
 import grails.test.mixin.TestFor
+import social.Post
 import spock.lang.Specification
 
 /**
