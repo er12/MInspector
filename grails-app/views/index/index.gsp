@@ -34,12 +34,10 @@
                     <div class="col-lg-6">
                         <div class="panel panel-default">
                             <div class="panel-heading">
-                                Bar Chart Example
+                                Seguidores
                             </div>
                             <div class="panel-body">
-
-
-                                <gvisualization:pieCoreChart elementId="piechart" title="My Daily Activities" width="${500}" height="${500}"
+                                <gvisualization:pieCoreChart elementId="piechart" title="Por red social" width="${500}" height="${500}"
                                                              columns="${myDailyActivitiesColumns}" data="${myDailyActivitiesData}" />
                                 <div id="piechart"></div>
 

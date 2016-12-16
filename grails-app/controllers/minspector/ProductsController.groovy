@@ -6,7 +6,11 @@ class ProductsController {
 
     def index() { }
 
-    def create()
+    def create() {
+    }
+
+
+    def form()
     {
         def name = params.name
         def list = params.tags
@@ -15,6 +19,12 @@ class ProductsController {
         producto.save()
 
         render(view:"facebook/index", model: [company: company, loaded: true]);
+
+    }
+
+    def assign()
+    {
+
 
     }
 }

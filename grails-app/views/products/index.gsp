@@ -34,7 +34,7 @@
                                 <div class="row">
                                     <div class="col-lg-4">
 
-                                        <g:form controller="products" action="create" role="form">
+                                        <g:form controller="products" action="form" role="form">
                                             <h1>Nombre del producto</h1>
                                             <div class="form-group input-group">
                                                 <span class="input-group-addon">@</span>

@@ -146,10 +146,10 @@
                         <a href="/products"><i class="fa fa-edit fa-fw"></i> Productos <span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="products/">Crear</a>
+                                <g:link controller="products" action="index">Crear</g:link>
                             </li>
                             <li>
-                                <a href="#">Asignar a posts</a>
+                                <g:link controller="products" action="assign">Asignar a posts</g:link>
                             </li>
                         </ul>
                     </li>
@@ -157,17 +157,17 @@
                         <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Reportes<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="flot.html">P&uacute;blico objetivo</a>
+                                <g:link controller="reports" action="pubobj">P&uacute;blico objetivo</g:link>
                             </li>
                             <li>
-                                <a href="morris.html">Impacto</a>
+                                <g:link controller="reports" action="impacto">Impacto social</g:link>
                             </li>
                         </ul>
                         <!-- /.nav-second-level -->
                     </li>
 
                     <li>
-                        <a href="tables.html"><i class="fa fa-table fa-fw"></i> Tables</a>
+                        <a href="tables.html"><i class="fa fa-table fa-fw"></i> Configuraci&oacute;n</a>
                     </li>
 
                     <li></li>
