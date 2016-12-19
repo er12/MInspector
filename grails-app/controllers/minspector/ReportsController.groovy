@@ -31,12 +31,13 @@ class ReportsController {
         apriori.setClassIndex(data.classIndex());
         apriori.buildAssociations(data);
 
+        //J48 ///Savedata intance
+
         // output associator
-        [apriori: apriori]
         def myDailyActivitiesColumns = [['string', 'Movements'], ['number', 'Media']]
         def myDailyActivitiesData = [['Facebook', 15], ['Twitter', 2], ['Instagram', 2]]
         //retornando...
-        [myDailyActivitiesColumns: myDailyActivitiesColumns, myDailyActivitiesData : myDailyActivitiesData];
+        [myDailyActivitiesColumns: myDailyActivitiesColumns, myDailyActivitiesData : myDailyActivitiesData , apriori: apriori]
 
     }
     def impacto()

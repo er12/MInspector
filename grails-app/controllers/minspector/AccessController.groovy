@@ -6,8 +6,8 @@ class AccessController {
 
     def login() {
 
-        minspector.Product.deleteAll()
-        minspector.Company.deleteAll()
+        //minspector.Product.deleteAll()
+        //minspector.Company.deleteAll()
 
         def valid = false
 

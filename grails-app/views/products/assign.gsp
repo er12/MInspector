@@ -33,23 +33,23 @@
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4 class="timeline-title">Publicación 1</h4>
+                                <h4 class="timeline-title">Today's design</h4>
                                 <p><small class="text-muted"><i class="fa fa-clock-o"></i> 11 hours ago via Facebook</small>
                                 </p>
-                            </div>
                             <div class="timeline-body">
                                 <p>Spirit Animal</p>
                             </div>
+                            <hr>
                             <div class="btn-group">
                                 <button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown">
                                     <i class="fa fa-gear"></i> <span class="caret"></span>
                                 </button>
                                 <ul class="dropdown-menu" role="menu">
-                                    <li><a href="#">Producto 0</a>
+                                    <li><a href="#">Spirit Animal</a>
                                     </li>
-                                    <li><a href="#">Producto 1</a>
+                                    <li><a href="#">General design</a>
                                     </li>
-                                    <li><a href="#">Producto 2</a>
+                                    <li><a href="#">Producto x</a>
                                     </li>
                                 </ul>
                             </div>
@@ -60,12 +60,13 @@
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4 class="timeline-title">Lorem ipsum dolor</h4>
+                                <h4 class="timeline-title">Mugs Free!</h4>
                             </div>
                             <div class="timeline-body">
-                                <p>Descripcion1</p>
+                                <p>Mugs designs for free only for today!</p>
 
                             </div>
+                            <hr>
                             <div class="btn-group">
                                 <button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown">
                                     <i class="fa fa-gear"></i> <span class="caret"></span>
